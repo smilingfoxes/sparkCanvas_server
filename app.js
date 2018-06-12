@@ -51,9 +51,3 @@ mongoose.connect("mongodb://localhost/canvas",function (err) {
 
 
 
-canvasName: String,
-    canvasId: String,
-    creator: String,
-    lists0: [{editor: String, content: String }],
-    lists1: [{editor: String, content: String }],
-    lists2: [{editor: String, content: String }]
