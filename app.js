@@ -1,5 +1,9 @@
 var express = require("express");
 var mongoose = require("mongoose");
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({
+    extended:true
+}));
 var canvas_content = require("./model").canvas_content
 const app = express();
 app.post("/save",function (req, res,next) {
